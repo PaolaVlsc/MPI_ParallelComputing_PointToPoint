@@ -39,10 +39,8 @@ Before you can run this example, you need to have MPI installed on your system.
 4. **Run the program** using the `mpirun` command. Ensure you specify the number of processes (e.g., 2 for this example):
 
     ```shell
-    mpirun -np 2 ./mpi_pointToPoint_final
+    mpiexecn -np 2 ./mpi_pointToPoint_final
     ```
-
-You should see the output indicating the successful exchange of data between processes.
 
 ## Contribution and Modification
 
