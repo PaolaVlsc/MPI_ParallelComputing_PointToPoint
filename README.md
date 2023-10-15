@@ -45,11 +45,13 @@ Before you can run this example, you need to have MPI installed on your system.
 
 ## Logic
 
-Process 0 takes on the role of handling user input, which involves specifying the sequence's length and inputting numbers into an array. We've employed dynamic arrays for the storage of these numbers. In cases where the number of processors matches the sequence's length, each process performs an equal number of comparisons. However, if there are more processors than needed, and they don't evenly divide the sequence, the excess comparisons are distributed using the modulus operator.
+Process 0 takes on the role of handling user input, which involves specifying the sequence's length and inputting numbers into an array. We've employed dynamic arrays for the storage of these numbers. In cases where the number of processors matches the sequence's length, each process performs an equal number of comparisons. However, if there are more processors than needed, and they don't evenly divide the sequence, the excess comparisons are distributed using the modulus operator. It also checks if the array is sorted or not and it indicates where's the error.
 
-![image](https://github.com/PaolaVlsc/MPI_ParallelComputing_PointToPoint/assets/87998374/f7fcf6e2-da49-4b09-9160-dd4b91a17d14)
+![image]()
 
-
+<p align="center">
+    <img width="200" src="https://github.com/PaolaVlsc/MPI_ParallelComputing_PointToPoint/assets/87998374/f7fcf6e2-da49-4b09-9160-dd4b91a17d14" alt="results">
+</
 ## Contribution and Modification
 
 If you have any improvements or suggestions for this example, please feel free to open an issue or create a pull request. Contributions are welcome!
