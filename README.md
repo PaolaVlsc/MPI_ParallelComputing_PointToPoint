@@ -6,6 +6,7 @@ MPI using point to point communication (MPI_Send, MPI_Recv). A simple uni projec
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
+- [Logic](#logic)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -41,6 +42,10 @@ Before you can run this example, you need to have MPI installed on your system.
     ```shell
     mpiexecn -np 2 ./mpi_pointToPoint_final
     ```
+
+## Logic
+
+Process 0 takes on the role of handling user input, which involves specifying the sequence's length and inputting numbers into an array. We've employed dynamic arrays for the storage of these numbers. In cases where the number of processors matches the sequence's length, each process performs an equal number of comparisons. However, if there are more processors than needed, and they don't evenly divide the sequence, the excess comparisons are distributed using the modulus operator.
 
 ## Contribution and Modification
 
